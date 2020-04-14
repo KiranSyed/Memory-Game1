@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(10, 10, 10);
+    color: rgb(241, 142, 12);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-weight: 700;
+    padding: 5% 0;
+    background-image: radial-gradient(circle, rgb(230, 141, 141), rgb(121, 83, 89), rgb(24, 206, 230) 10%,rgb(216, 121, 33),rgb(163, 79, 131), rgb(69, 187, 116));
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: gradient 5s linear alternate;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+h1::before{
+    content: '';
+   display: block;
+   height: 5px;
+   background-image: radial-gradient(circle, rgb(141, 230, 223), rgb(121, 83, 89), rgb(24, 206, 230) 10%,rgb(216, 121, 33),rgb(163, 79, 131), rgb(69, 187, 116));
+   
+}
+h1::after{
+    content: '';
+   display: block;
+   height: 5px;
+   background-image: radial-gradient(circle, rgb(230, 141, 141), rgb(121, 83, 89), rgb(24, 206, 230) 10%,rgb(216, 121, 33),rgb(163, 79, 131), rgb(69, 187, 116));
+}
+button{
+    color: white;
+    height: 50px;
+    width: 150px;
+    font-weight: 900;
+    margin: 0 5%;
+    background-color: black;
+   border: 2px solid cyan;
+}
+button:hover{
+    background-image: linear-gradient(45deg, rgb(230, 141, 141), rgb(121, 83, 89), rgb(24, 206, 230) 10%,rgb(216, 121, 33),rgb(163, 79, 131), rgb(69, 187, 116));
+}
+.row{
+    margin: 1%;
+    padding: 1% 18%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.card{
+    margin: 5px;
+    height: 120px;
+    width: 70px;
+    background-image: url("images/card-design.jpg");
+}
+.hidden{
+    display: none;
+}
+.match{
+    opacity: 0.4;
+}
+
