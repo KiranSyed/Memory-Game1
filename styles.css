@@ -8,6 +8,7 @@ body{
 h1{
     font-weight: 700;
     padding: 5% 0;
+    font-family: 'Monoton', cursive;
     background-image: radial-gradient(circle, rgb(230, 141, 141), rgb(121, 83, 89), rgb(24, 206, 230) 10%,rgb(216, 121, 33),rgb(163, 79, 131), rgb(69, 187, 116));
     -webkit-background-clip: text;
     color: transparent;
